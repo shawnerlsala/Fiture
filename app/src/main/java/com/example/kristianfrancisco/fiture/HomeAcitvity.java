@@ -1,5 +1,6 @@
 package com.example.kristianfrancisco.fiture;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -38,7 +39,7 @@ public class HomeAcitvity extends AppCompatActivity {
                 getSupportActionBar().setTitle("Fiture");
             }
         });
-
+        getSupportActionBar().setTitle("Home");
         getSupportFragmentManager().beginTransaction()
                 .add(R.id.home_content_frame, fragmentMenu)
                 .commit();
@@ -104,8 +105,15 @@ public class HomeAcitvity extends AppCompatActivity {
                         .commit();
                 getSupportActionBar().setTitle("Challenges");
                 break;
+
+            case 9:
+                Intent intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                finish();
+                break;
         }
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
+
 }

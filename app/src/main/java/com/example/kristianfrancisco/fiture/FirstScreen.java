@@ -49,10 +49,12 @@ public class FirstScreen extends Fragment implements View.OnClickListener {
 
             case R.id.btnClient:
                 mainActivity.switchFragments(2);
+                mainActivity.isClient(true);
                 break;
 
             case R.id.btnInstructor:
                 mainActivity.switchFragments(2);
+                mainActivity.isClient(false);
                 break;
 
         }

@@ -10,6 +10,7 @@ public class MainActivity extends AppCompatActivity {
     private static FirstScreen fragment1 = new FirstScreen();
     private static SecondScreen fragment2 = new SecondScreen();
     private static ThirdScreen fragment3 = new ThirdScreen();
+    boolean client = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +45,22 @@ public class MainActivity extends AppCompatActivity {
                         .commit();
                 break;
             case 4:
-                Intent intent = new Intent(this, HomeAcitvity.class);
-                startActivity(intent);
-
+                if(client == true) {
+                    Intent intent = new Intent(this, HomeAcitvity.class);
+                    startActivity(intent);
+                }
+                else {
+                    Intent intent = new Intent(this, HomActivityInstructor.class);
+                    startActivity(intent);
+                }
+                finish();
+                break;
         }
 
+    }
+
+    public void isClient(boolean bool){
+        client = bool;
     }
 
 }

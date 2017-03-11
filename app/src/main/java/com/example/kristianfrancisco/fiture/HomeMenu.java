@@ -36,6 +36,8 @@ public class HomeMenu extends Fragment implements View.OnClickListener {
         ImageView leaderBoard = (ImageView) rootView.findViewById(R.id.ivLeaderBoard);
         ImageView videos = (ImageView) rootView.findViewById(R.id.ivVideos);
         ImageView challenges = (ImageView) rootView.findViewById(R.id.ivChallenges);
+        ImageView logOut = (ImageView) rootView.findViewById(R.id.ivLogOut);
+        logOut.setOnClickListener(this);
         videos.setOnClickListener(this);
         challenges.setOnClickListener(this);
         leaderBoard.setOnClickListener(this);
@@ -70,6 +72,8 @@ public class HomeMenu extends Fragment implements View.OnClickListener {
             case R.id.ivVideos:homeAcitvity.switchFragmentHome(7);
                 break;
             case R.id.ivChallenges:homeAcitvity.switchFragmentHome(8);
+                break;
+            case R.id.ivLogOut:homeAcitvity.switchFragmentHome(9);
                 break;
         }
     }
