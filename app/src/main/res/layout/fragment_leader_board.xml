@@ -8,6 +8,210 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="LeaderBoard" />
+        android:text="" />
+
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"  android:stretchColumns="*" android:background="#ffffff">
+
+
+    <!-- Row 1 with single column -->
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+
+
+
+
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18dp" android:text="               MONTHLY LEADERBOARD "  android:layout_span="3"
+            android:padding="18dip" android:background="#132F2B"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+
+
+
+
+    </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="18dp" android:text="#1
+Hannah Mae Lim"  android:layout_span="3"
+
+                android:padding="18dip" android:background="#469070"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="18dp" android:text="#2
+Deceree Clyde Quiamco"  android:layout_span="3"
+                android:padding="18dip" android:background="#469070"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="18dp" android:text="#3
+Shawn Erl Sala"  android:layout_span="3"
+                android:padding="18dip" android:background="#469070"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="18dp" android:text="#4
+Mycoh Basilan"  android:layout_span="3"
+
+
+                android:padding="18dip" android:background="#469070"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="18dp" android:text="#5
+Beatrice Ylaya"  android:layout_span="3"
+                android:padding="18dip" android:background="#469070"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="18dp" android:text="#6
+Enrica Jules"  android:layout_span="3"
+                android:padding="18dip" android:background="#469070"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="18dp" android:text="#7
+Kimberly Canedo"  android:layout_span="3"
+                android:padding="18dip" android:background="#469070"
+                android:textColor="#fff"
+                android:textStyle="bold"/>
+
+
+
+        </TableRow>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+
+
+
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:textSize="18dp" android:text="Row 1"  android:layout_span="3"
+                android:padding="18dip" android:background="#b0b0b0"
+                android:textColor="#000"/>
+
+
+        </TableRow> <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+        <TextView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="18dp" android:text="Row 1"  android:layout_span="3"
+            android:padding="18dip" android:background="#b0b0b0"
+            android:textColor="#000"/>
+
+</LinearLayout>
+
+
+    </TableRow>
+
+    </TableLayout>
 
 </FrameLayout>
+
+
