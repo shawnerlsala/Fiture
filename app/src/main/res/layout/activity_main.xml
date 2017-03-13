@@ -6,27 +6,21 @@
     android:layout_height="match_parent"
     tools:context="com.example.kristianfrancisco.fiture.MainActivity">
 
-    <ImageView
-        android:id="@+id/fitureLogo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"/>
 
-    <TextView
-        android:id="@+id/fitureText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/fitureLogo"
-        android:layout_centerHorizontal="true"
-        android:text="FITure"
-        android:textSize="24sp"
-        android:textStyle="bold"/>
 
     <FrameLayout
         android:id="@+id/content_frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/fitureText"></FrameLayout>
+        android:layout_below="@+id/fitureLogo"></FrameLayout>
+
+    <ImageView
+        android:id="@+id/fitureLogo"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/logo"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp" />
 
 </RelativeLayout>
