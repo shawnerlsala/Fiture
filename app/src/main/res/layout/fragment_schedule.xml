@@ -88,16 +88,19 @@
             android:gravity="center_horizontal">
 
 
-
-
             <TextView
-                android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:textSize="18dp" android:text="1:00pm     Shawn Erl Sala
-instructor - 60 minutes"  android:layout_span="4"
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="4"
+                android:background="#4B2C34"
 
-                android:padding="18dip" android:background="#4B2C34"
+                android:padding="18dip"
+                android:text="1:00pm     Shawn Erl Sala
+instructor - 60 minutes"
                 android:textColor="#fff"
-                android:textStyle="bold"/>
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
 
         </TableRow>

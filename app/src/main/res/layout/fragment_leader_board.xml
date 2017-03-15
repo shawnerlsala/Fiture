@@ -100,17 +100,20 @@ Shawn Erl Sala"  android:layout_span="3"
             android:gravity="center_horizontal">
 
 
-
-
             <TextView
-                android:layout_width="match_parent" android:layout_height="wrap_content"
-                android:textSize="18dp" android:text="#4
-Mycoh Basilan"  android:layout_span="3"
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:background="#469070"
 
 
-                android:padding="18dip" android:background="#469070"
+                android:padding="18dip"
+                android:text="#4
+Mycoh Basilan"
                 android:textColor="#fff"
-                android:textStyle="bold"/>
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
 
         </TableRow>
