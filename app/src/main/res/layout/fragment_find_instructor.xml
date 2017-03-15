@@ -4,6 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context="com.example.kristianfrancisco.fiture.findInstructor"
     android:weightSum="1">
     <LinearLayout
@@ -20,16 +21,26 @@
     <ImageView
         android:layout_width="120dp"
         android:layout_height="120dp"
-        app:srcCompat="@drawable/users"
+        app:srcCompat="@drawable/pexels1"
         android:id="@+id/imageView1"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"/>
 
     <TextView
-        android:text="TextView"
+        android:text="Shawn Erl Sala"
         android:layout_width="115dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
+        android:layout_gravity="center"
+        android:layout_marginLeft="22dp"
+        android:textSize="12sp"/>
+    <TextView
+        android:text="shawnerlsala@gmail.com"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:id="@+id/textView01"
+        android:textSize="10sp"
         android:layout_gravity="center"/>
 </LinearLayout>
     <!-- TODO: Update blank fragment layout -->
@@ -42,19 +53,28 @@
         <ImageView
             android:layout_width="120dp"
             android:layout_height="120dp"
-            app:srcCompat="@drawable/users"
+            app:srcCompat="@drawable/pexels2"
             android:id="@+id/imageView4"
             android:layout_marginLeft="60dp"
             android:layout_marginTop="20dp"
             />
 
         <TextView
-            android:text="TextView"
+            android:text="Hannah Lim"
+            android:layout_marginLeft="32dp"
             android:layout_width="115dp"
             android:layout_height="wrap_content"
-            android:id="@+id/textView4"
+            android:id="@+id/textView22"
+            android:layout_gravity="center"
+            android:textSize="12sp"/>
+        <TextView
+            android:text="hannahmaelim@gmail.com"
+            android:layout_width="115dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView02"
+            android:layout_marginLeft="32dp"
+            android:textSize="10sp"
             android:layout_gravity="center"/>
-
     </LinearLayout>
 
     </LinearLayout>
@@ -71,15 +91,25 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                app:srcCompat="@drawable/users"
+                app:srcCompat="@drawable/pexels3"
                 android:id="@+id/imageView2"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"/>
             <TextView
-                android:text="TextView"
+                android:text="Cognac Don Castor"
                 android:layout_width="115dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/textView2"
+                android:layout_marginLeft="22dp"
+                android:textSize="12sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:text="cognaccastor@gmail.com"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView03"
+                android:layout_marginLeft="22dp"
+                android:textSize="10sp"
                 android:layout_gravity="center"/>
         </LinearLayout>
         <!-- TODO: Update blank fragment layout -->
@@ -91,17 +121,27 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                app:srcCompat="@drawable/users"
+                app:srcCompat="@drawable/pexels4"
                 android:id="@+id/imageView5"
                 android:layout_marginLeft="60dp"
                 android:layout_marginTop="20dp"
                 />
 
             <TextView
-                android:text="TextView"
+                android:text="Deceree Quiamco"
                 android:layout_width="115dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView5"
+                android:id="@+id/textView4"
+                android:layout_marginLeft="22dp"
+                android:textSize="12sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:text="decereequiamco@gmail.com"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView04"
+                android:layout_marginLeft="22dp"
+                android:textSize="10sp"
                 android:layout_gravity="center"/>
 
         </LinearLayout>
@@ -120,15 +160,25 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                app:srcCompat="@drawable/users"
+                app:srcCompat="@drawable/pexels6"
                 android:id="@+id/imageView3"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="20dp"/>
             <TextView
-                android:text="TextView"
+                android:text="Nikki Canedo"
                 android:layout_width="115dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView3"
+                android:id="@+id/textView5"
+                android:layout_marginLeft="22dp"
+                android:textSize="12sp"
+                android:layout_gravity="center"/>
+            <TextView
+                android:text="piggymonster@gmail.com"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView05"
+                android:layout_marginLeft="22dp"
+                android:textSize="10sp"
                 android:layout_gravity="center"/>
         </LinearLayout>
         <!-- TODO: Update blank fragment layout -->
@@ -140,18 +190,29 @@
             <ImageView
                 android:layout_width="120dp"
                 android:layout_height="120dp"
-                app:srcCompat="@drawable/users"
+                app:srcCompat="@drawable/pexels5"
                 android:id="@+id/imageView6"
                 android:layout_marginLeft="60dp"
                 android:layout_marginTop="20dp"
                 />
 
             <TextView
-                android:text="TextView"
+                android:text="Daphny Smith"
                 android:layout_width="115dp"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView10"
+                android:id="@+id/textView6"
+                android:layout_marginLeft="22dp"
+                android:textSize="12sp"
                 android:layout_gravity="center"/>
+            <TextView
+                android:text="daphnysmith@gmail.com"
+                android:layout_width="115dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView06"
+                android:layout_marginLeft="22dp"
+                android:textSize="10sp"
+                android:layout_gravity="center"/>
+
 
         </LinearLayout>
 
