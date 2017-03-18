@@ -58,10 +58,11 @@ public class HomActivityInstructor extends AppCompatActivity {
 //                startActivity(new Intent(this,attendanceInstructor.class));
 //                break;
             case 2:
-                getSupportFragmentManager().beginTransaction()
-                        .replace(R.id.content_frame_instructor, clientLogs)
-                        .commit();
-                getSupportActionBar().setTitle("Client Logs");
+//                getSupportFragmentManager().beginTransaction()
+//                        .replace(R.id.content_frame_instructor, clientLogs)
+//                        .commit();
+//                getSupportActionBar().setTitle("Client Logs");
+                //startActivity(new Intent(this,clientLogs.class));
                 break;
             case 3:
                 getSupportFragmentManager().beginTransaction()

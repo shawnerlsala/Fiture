@@ -1,13 +1,19 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.kristianfrancisco.fiture.clientLogs">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.design.widget.TabLayout
+        android:id="@+id/client_log_tab"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Client Logs" />
+        android:layout_height="35dp"></android.support.design.widget.TabLayout>
 
-</FrameLayout>
+    <FrameLayout
+        android:id="@+id/client_log_frame"
+        android:layout_below="@+id/client_log_tab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
+</RelativeLayout>

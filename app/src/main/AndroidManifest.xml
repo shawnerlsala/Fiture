@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomeAcitvity" />
-        <activity android:name=".attendanceInstructor"/>
+        <activity android:name=".attendanceInstructorLast"/>
+        <activity android:name=".clientLogs"/>
         <activity android:name=".HomActivityInstructor" />
         <activity android:name=".attendance_instructor_log">
         </activity>
