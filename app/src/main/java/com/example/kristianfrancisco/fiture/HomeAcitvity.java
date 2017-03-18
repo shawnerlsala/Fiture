@@ -53,6 +53,7 @@ public class HomeAcitvity extends AppCompatActivity {
             case 1:
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.home_content_frame, fragmentProfile)
+                        .addToBackStack(null)
                         .commit();
                 getSupportActionBar().setTitle("Profile");
                 break;
@@ -60,6 +61,7 @@ public class HomeAcitvity extends AppCompatActivity {
             case 2:
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.home_content_frame, fragmentFindInstructor)
+                        .addToBackStack(null)
                         .commit();
                 getSupportActionBar().setTitle("Find Instructor");
                 break;
@@ -67,6 +69,7 @@ public class HomeAcitvity extends AppCompatActivity {
             case 3:
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.home_content_frame, fragmentProgress)
+                        .addToBackStack(null)
                         .commit();
                 getSupportActionBar().setTitle("Progress");
                 break;
@@ -74,6 +77,7 @@ public class HomeAcitvity extends AppCompatActivity {
             case 4:
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.home_content_frame, fragmentWorkOutLog)
+                        .addToBackStack(null)
                         .commit();
                 getSupportActionBar().setTitle("Work Out Log");
                 break;
@@ -81,6 +85,7 @@ public class HomeAcitvity extends AppCompatActivity {
             case 5:
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.home_content_frame, fragmentStartUp)
+                        .addToBackStack(null)
                         .commit();
                 getSupportActionBar().setTitle("Start Up");
                 break;
@@ -88,6 +93,7 @@ public class HomeAcitvity extends AppCompatActivity {
             case 6:
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.home_content_frame, fragmentLeaderBoard)
+                        .addToBackStack(null)
                         .commit();
                 getSupportActionBar().setTitle("LeaderBoard");
                 break;
@@ -95,6 +101,7 @@ public class HomeAcitvity extends AppCompatActivity {
             case 7:
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.home_content_frame, fragmentVideos)
+                        .addToBackStack(null)
                         .commit();
                 getSupportActionBar().setTitle("Videos");
                 break;
@@ -102,6 +109,7 @@ public class HomeAcitvity extends AppCompatActivity {
             case 8:
                 getSupportFragmentManager().beginTransaction()
                         .replace(R.id.home_content_frame, fragmentChallenges)
+                        .addToBackStack(null)
                         .commit();
                 getSupportActionBar().setTitle("Challenges");
                 break;

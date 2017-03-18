@@ -1,6 +1,7 @@
 package com.example.kristianfrancisco.fiture;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -35,13 +36,20 @@ public class HomeMenuInstructor extends Fragment implements View.OnClickListener
         ImageView logOutInstructor = (ImageView) rootView.findViewById(R.id.ivLogOutInstructor);
         ImageView fitureChallenge = (ImageView) rootView.findViewById(R.id.ivFitureChallenge);
 
-        attendance.setOnClickListener(this);
+        //attendance.setOnClickListener(this);
         clientLogs.setOnClickListener(this);
         schedule.setOnClickListener(this);
         clientsAttendance.setOnClickListener(this);
         profileInstructor.setOnClickListener(this);
         logOutInstructor.setOnClickListener(this);
         fitureChallenge.setOnClickListener(this);
+
+        attendance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().startActivity(new Intent(getActivity(),attendanceInstructor.class));
+            }
+        });
 
         return rootView;
     }
@@ -56,6 +64,9 @@ public class HomeMenuInstructor extends Fragment implements View.OnClickListener
         switch (v.getId()){
 
             case R.id.ivAttendance:homActivityInstructor.switchFragmentsInstructor(1);
+//                Intent intent = new Intent(this.getActivity(),attendanceInstructor.class);
+//                startActivity(intent);
+                //startActivity(new Intent());
                 break;
             case R.id.ivClientLogs:homActivityInstructor.switchFragmentsInstructor(2);
                 break;
