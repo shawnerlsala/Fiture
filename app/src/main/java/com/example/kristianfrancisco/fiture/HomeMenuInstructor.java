@@ -48,7 +48,7 @@ public class HomeMenuInstructor extends Fragment implements View.OnClickListener
         attendance.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().startActivity(new Intent(getActivity(),attendanceInstructor.class));
+                startActivity(new Intent(getActivity(),attendanceInstructor.class));
             }
         });
 
@@ -65,9 +65,6 @@ public class HomeMenuInstructor extends Fragment implements View.OnClickListener
         switch (v.getId()){
 
             case R.id.ivAttendance:homActivityInstructor.switchFragmentsInstructor(1);
-//                Intent intent = new Intent(this.getActivity(),attendanceInstructor.class);
-//                startActivity(intent);
-                //startActivity(new Intent());
                 break;
             case R.id.ivClientLogs:homActivityInstructor.switchFragmentsInstructor(2);
                 break;

@@ -6,7 +6,6 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -17,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".HomeAcitvity" />
-        <activity android:name=".attendanceInstructorLast"/>
+        <activity android:name=".attendanceInstructor"/>
         <activity android:name=".clientLogs"/>
         <activity android:name=".HomActivityInstructor" />
         <activity android:name=".attendance_instructor_log">

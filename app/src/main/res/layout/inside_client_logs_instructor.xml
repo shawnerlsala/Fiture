@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="150dp"
-    android:background="#B0E0E6">
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    android:elevation="2dp">
 
     <LinearLayout
+        android:background="#B0E0E6"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
@@ -14,6 +19,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:background="#000"
+        android:scaleType="fitXY"
         android:layout_marginTop="35dp"
         android:layout_marginLeft="20dp"/>
 
@@ -40,4 +46,4 @@
 
     </LinearLayout>
 
-</FrameLayout>
+</android.support.v7.widget.CardView>
