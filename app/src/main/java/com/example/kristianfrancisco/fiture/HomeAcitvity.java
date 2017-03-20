@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Toast;
 
 public class HomeAcitvity extends AppCompatActivity {
 
@@ -39,10 +40,14 @@ public class HomeAcitvity extends AppCompatActivity {
                 getSupportActionBar().setTitle("Fiture");
             }
         });
+
         getSupportActionBar().setTitle("Home");
+
         getSupportFragmentManager().beginTransaction()
-                .add(R.id.home_content_frame, fragmentMenu)
+                .replace(R.id.home_content_frame, fragmentMenu)
                 .commit();
+
+        Toast.makeText(this, "START", Toast.LENGTH_LONG).show();
 
     }
 

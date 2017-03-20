@@ -1,6 +1,7 @@
 package com.example.kristianfrancisco.fiture;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
@@ -30,7 +31,7 @@ Button select;
         select.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                startActivity(new Intent(getActivity(),startUpActivity.class));
             }
         });
 
