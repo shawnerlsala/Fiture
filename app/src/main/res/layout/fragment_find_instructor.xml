@@ -2,12 +2,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:padding="5dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.kristianfrancisco.fiture.findInstructor"
     android:weightSum="1">
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -21,13 +22,14 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         app:srcCompat="@drawable/users"
-        android:id="@+id/imageView1"
+        android:id="@+id/shawnPic"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="20dp"/>
 
     <TextView
-        android:text="TextView"
+        android:text="Shawn Earl Sala"
         android:layout_width="115dp"
+        android:gravity="center"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:layout_gravity="center"/>
@@ -35,7 +37,7 @@
     <!-- TODO: Update blank fragment layout -->
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -58,7 +60,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
@@ -107,7 +109,7 @@
 
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 

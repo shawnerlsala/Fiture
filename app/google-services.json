@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "700413289398",
+    "firebase_url": "https://fitture-eaa16.firebaseio.com",
+    "project_id": "fitture-eaa16",
+    "storage_bucket": "fitture-eaa16.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700413289398:android:29189b00de1b4e7c",
+        "android_client_info": {
+          "package_name": "com.example.kristianfrancisco.fiture"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700413289398-cjoulh2lt6hbegnkvp300r6gc6vnd26k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY9JCLCS7ryM9YSec-2bQR0GRxo6H47oY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

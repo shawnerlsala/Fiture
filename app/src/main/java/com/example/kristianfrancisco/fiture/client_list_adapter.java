@@ -11,7 +11,9 @@ import android.widget.TextView;
  * Created by Hannah on 3/19/2017.
  */
 
-public class client_list_adapter extends RecyclerView.Adapter<client_list_adapter.ViewHolder> {
+public class
+
+ client_list_adapter extends RecyclerView.Adapter<client_list_adapter.ViewHolder> {
  private String[] name = {"Hannah Lim",
          "Shawn Erl Sala",
          "Deceree Clyde",
