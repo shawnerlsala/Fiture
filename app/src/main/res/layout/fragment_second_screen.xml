@@ -11,24 +11,33 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/fitureText"
-            android:orientation="vertical"
-            android:id="@+id/linearLayout">
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Email" />
 
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:gravity="center"
+                    android:hint="Password"/>
+
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Email"
-                    android:gravity="center"/>
 
             </LinearLayout>
 
@@ -41,12 +50,6 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Password"
-                    android:gravity="center" />
 
             </LinearLayout>
 
@@ -55,6 +58,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Login"
+                android:fontFamily="sans-serif-black-condensed"
+                android:textSize="20sp"
                 android:background="#27ae60"
                 android:gravity="center"/>
 
@@ -86,16 +91,6 @@
             android:text="Sign Up"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"/>
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/linearLayout"
-            android:layout_marginTop="74dp"
-            android:layout_toStartOf="@+id/btnSignUp"
-            android:ems="10"
-            android:inputType="numberPassword" />
 
     </RelativeLayout>
 

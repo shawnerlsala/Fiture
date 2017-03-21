@@ -13,7 +13,7 @@
         <ImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
-            android:src="@drawable/shawnerlsala"/>
+            android:src="@drawable/dd"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Shawn Erl Sala" />
+                    android:text="Deceree Clyde Quiamco" />
 
             </LinearLayout>
 
@@ -65,6 +65,7 @@
                     android:text="Address: " />
 
                 <TextView
+                    android:id="@+id/textView29"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Cebu City" />
@@ -101,7 +102,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="mcThrow@gmail.com" />
+                    android:text="ddClyde@gmail.com" />
 
             </LinearLayout>
 
@@ -118,7 +119,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1024 Points" />
+                    android:text="504 Points" />
 
             </LinearLayout>
 
@@ -130,9 +131,10 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/personalInfo"
         android:text="WORK OUT PLAN"
-        android:layout_centerHorizontal="true"/>
+        android:layout_marginEnd="114dp"
+        android:layout_below="@+id/personalInfo"
+        android:layout_alignParentEnd="true" />
 
     <LinearLayout
         android:layout_below="@+id/personalInfo"
