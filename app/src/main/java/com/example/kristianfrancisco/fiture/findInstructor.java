@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +17,7 @@ import android.widget.ImageView;
  */
 public class findInstructor extends DialogFragment {
 
+    HomeAcitvity hm;
 ImageView image;
     public findInstructor() {
         // Required empty public constructor
@@ -32,14 +34,22 @@ ImageView image;
         image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                FragmentManager fm = getFragmentManager();
-                InstructorProfile pr = new InstructorProfile();
-                dismiss();
-                pr.show(fm,"Instructor");
+                if(hm==null){
+                    Log.e("kobe", " null");
+                }else {
+                    Log.e("kobe", "DIli null");
+                    hm.showDialogs(2);
+                    dismiss();
+                }
             }
         });
 
         return view;
+    }
+
+    public void setParentActivity(HomeAcitvity hm){
+        this.hm = hm;
+        Log.e("kobe","ni sud sa set Parent = "+hm);
     }
 
 }

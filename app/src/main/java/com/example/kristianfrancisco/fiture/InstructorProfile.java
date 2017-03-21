@@ -16,6 +16,7 @@ import android.widget.Button;
  */
 public class InstructorProfile extends DialogFragment {
 Button select;
+    private HomeAcitvity hm;
 
     public InstructorProfile() {
         // Required empty public constructor
@@ -32,10 +33,16 @@ Button select;
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getActivity(),startUpActivity.class));
+                hm.finish();
             }
         });
 
         return view;
+    }
+
+    public void setParentActivity(HomeAcitvity hm){
+        this.hm = hm;
+
     }
 
 }

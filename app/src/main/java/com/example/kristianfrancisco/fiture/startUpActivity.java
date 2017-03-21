@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class startUpActivity extends AppCompatActivity {
 
     Button startWorkout;
+    HomeAcitvity hm = new HomeAcitvity();
     int a = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +41,7 @@ public class startUpActivity extends AppCompatActivity {
                     a++;
                 }else{
                     Intent intent = new Intent(startUpActivity.this,HomeAcitvity.class);
+                    //hm.switchFragmentHome(0);
                     startActivity(intent);
                 }
 

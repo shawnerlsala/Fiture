@@ -20,6 +20,8 @@ public class HomeAcitvity extends AppCompatActivity {
     private static LeaderBoard fragmentLeaderBoard = new LeaderBoard();
     private static videos fragmentVideos = new videos();
     private static challenges fragmentChallenges = new challenges();
+    private static InstructorProfile fragmentinstructorProfile = new InstructorProfile();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,9 @@ public class HomeAcitvity extends AppCompatActivity {
 
         fragmentMenu.setParent(this);
         fragmentProfile.setParentActivity(this);
+        fragmentFindInstructor.setParentActivity(this);
+        fragmentinstructorProfile.setParentActivity(this);
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(Color.WHITE);
@@ -56,6 +61,10 @@ public class HomeAcitvity extends AppCompatActivity {
     public void switchFragmentHome(int num){
 
         switch(num){
+            case 0: getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.home_content_frame, fragmentMenu)
+                    .commit();
+                break;
 
             case 1:
                 getSupportFragmentManager().beginTransaction()
@@ -137,9 +146,10 @@ public class HomeAcitvity extends AppCompatActivity {
         switch (identifier){
             //find instructor dialog
             case 1:
-                FragmentManager fm = getSupportFragmentManager();
-                com.example.kristianfrancisco.fiture.findInstructor frag = new findInstructor();
-                frag.show(fm,"Find Instructor Fragment");
+                fragmentFindInstructor.show(getSupportFragmentManager(),"Find Instructor Fragment");
+                break;
+            case 2:
+                fragmentinstructorProfile.show(getSupportFragmentManager(),"Instructor profile");
                 break;
         }
 
