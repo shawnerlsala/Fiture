@@ -35,7 +35,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
-                android:text="Name:"
+                android:text="Name: Deceree Clyde Quiamo"
                 android:textSize="15sp"/>
 
         </TableRow>
@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
-                android:text="Name of Instructor:"
+                android:text="Name of Instructor: Mycoh Basilan"
                 android:textSize="15sp"/>
 
         </TableRow>
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginLeft="10dp"
-                android:text="Program Start Date:"
+                android:text="Program Start Date: January 01, 2016"
                 android:textSize="15sp"/>
 
         </TableRow>
@@ -87,14 +87,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="12dp"
                 android:text="Age:" />
 
             <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:layout_marginRight="40dp"
+            android:layout_marginRight="45dp"
             android:id="@+id/tvAge"
             android:text="19" />
 
