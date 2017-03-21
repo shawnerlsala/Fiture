@@ -9,6 +9,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.kristianfrancisco.fiture.FragmentChallengesClient.Level1Client;
+
 public class HomeAcitvity extends AppCompatActivity {
 
     private static HomeMenu fragmentMenu = new HomeMenu();
@@ -21,6 +23,7 @@ public class HomeAcitvity extends AppCompatActivity {
     private static videos fragmentVideos = new videos();
     private static challenges fragmentChallenges = new challenges();
     private static InstructorProfile fragmentinstructorProfile = new InstructorProfile();
+    private static Level1Client level1Client = new Level1Client();
 
 
     @Override
@@ -32,6 +35,7 @@ public class HomeAcitvity extends AppCompatActivity {
         fragmentProfile.setParentActivity(this);
         fragmentFindInstructor.setParentActivity(this);
         fragmentinstructorProfile.setParentActivity(this);
+        level1Client.setParent(this);
 
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -136,6 +140,11 @@ public class HomeAcitvity extends AppCompatActivity {
                 startActivity(intent);
                 finish();
                 break;
+            case 10:
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.home_content_frame,level1Client)
+                        .addToBackStack(null)
+                        .commit();
         }
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

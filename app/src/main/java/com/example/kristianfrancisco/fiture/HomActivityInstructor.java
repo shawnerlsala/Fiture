@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
+import com.example.kristianfrancisco.fiture.FragmentChallenges.Level1;
+
 public class HomActivityInstructor extends AppCompatActivity {
 
     private static HomeMenuInstructor homeMenuInstructor = new HomeMenuInstructor();
@@ -16,12 +18,16 @@ public class HomActivityInstructor extends AppCompatActivity {
     private static clientsAttendance clientsAttendance = new clientsAttendance();
     private static profileInstructor profileInstructor = new profileInstructor();
     private static fitureChallenge fitureChallenge = new fitureChallenge();
+    private static Level1 level1 = new Level1();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hom_instructor);
         homeMenuInstructor.setParent(this);
+        level1.setParent(this);
+        fitureChallenge.setParent(this);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(Color.WHITE);
@@ -93,6 +99,10 @@ public class HomActivityInstructor extends AppCompatActivity {
                         .commit();
                 getSupportActionBar().setTitle("Fiture Challenge");
                 break;
+            case 8:
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.content_frame_instructor,level1)
+                        .commit();
 
         }
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
