@@ -18,15 +18,6 @@ public class attendanceInstructor extends AppCompatActivity implements ZXingScan
 
     private ZXingScannerView mScannerView;
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        mScannerView = new ZXingScannerView(this);
-//        setContentView(mScannerView);
-//        mScannerView.setResultHandler(this);
-//        mScannerView.startCamera();
-//
-//    }
 
 
     @Override

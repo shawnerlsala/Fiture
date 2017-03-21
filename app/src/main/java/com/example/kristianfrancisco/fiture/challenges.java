@@ -7,12 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.firebase.client.Firebase;
+
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class challenges extends Fragment {
-
+Firebase firebase;
 
     public challenges() {
         // Required empty public constructor
@@ -23,7 +25,11 @@ public class challenges extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_challenges, container, false);
+        View view =  inflater.inflate(R.layout.fragment_challenges, container, false);
+
+
+
+        return view;
     }
 
 }

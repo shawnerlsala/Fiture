@@ -12,7 +12,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/fitureText"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:id="@+id/linearLayout">
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -85,6 +86,16 @@
             android:text="Sign Up"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="74dp"
+            android:layout_toStartOf="@+id/btnSignUp"
+            android:ems="10"
+            android:inputType="numberPassword" />
 
     </RelativeLayout>
 

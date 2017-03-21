@@ -2,8 +2,9 @@ package com.example.kristianfrancisco.fiture;
 
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Toast;
@@ -26,6 +27,7 @@ public class HomeAcitvity extends AppCompatActivity {
         setContentView(R.layout.activity_home_acitvity);
 
         fragmentMenu.setParent(this);
+        fragmentProfile.setParentActivity(this);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         toolbar.setTitleTextColor(Color.WHITE);
@@ -61,6 +63,7 @@ public class HomeAcitvity extends AppCompatActivity {
                         .addToBackStack(null)
                         .commit();
                 getSupportActionBar().setTitle("Profile");
+
                 break;
 
             case 2:
@@ -127,6 +130,19 @@ public class HomeAcitvity extends AppCompatActivity {
         }
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    public void showDialogs(int identifier){
+
+        switch (identifier){
+            //find instructor dialog
+            case 1:
+                FragmentManager fm = getSupportFragmentManager();
+                com.example.kristianfrancisco.fiture.findInstructor frag = new findInstructor();
+                frag.show(fm,"Find Instructor Fragment");
+                break;
+        }
+
     }
 
 }
